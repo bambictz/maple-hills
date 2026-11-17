@@ -337,6 +337,50 @@ footer.site::before{content:"";position:absolute;left:0;right:0;top:0;height:3px
 .rc-hit:hover{border-color:var(--accent)}
 .rc-hit b{font-family:var(--display);font-weight:500}
 .rc-hit span{display:block;color:var(--muted);font-size:.88rem}
+.hero{position:relative;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:20px;align-items:center;margin:0 0 26px;padding:26px 26px 22px;border-radius:18px;overflow:hidden;color:#fff;
+ background:radial-gradient(1.5px 1.5px at 10% 20%,#fff 50%,transparent 51%),radial-gradient(2px 2px at 78% 14%,#fff 50%,transparent 51%),radial-gradient(1.5px 1.5px at 40% 80%,#ffd6e2 50%,transparent 51%),radial-gradient(1px 1px at 60% 40%,#fff 50%,transparent 51%),radial-gradient(1.5px 1.5px at 90% 70%,#fff 50%,transparent 51%),radial-gradient(circle at 85% 10%,#f6b7c866,transparent 45%),linear-gradient(160deg,#8e98e6,#6a63c0 45%,#2f2a6b)}
+.hero .eyebrow{color:#f6d2dc}
+.hero-h{font-size:clamp(1.6rem,4vw,2.3rem);color:#fff;margin:4px 0 8px}
+.hero-h span{font-family:var(--script);font-size:1.6em;font-weight:400;display:inline-block;line-height:.9}
+.hero p{margin:0 0 12px;color:#e9e7ff;max-width:52ch}
+.stats{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.stats span{background:#ffffff1f;border:1px solid #ffffff33;border-radius:999px;padding:4px 12px;font-size:.85rem}
+.stats b{font-family:var(--display);font-size:1.1rem;margin-right:3px}
+.hero-act{display:flex;flex-wrap:wrap;gap:8px}
+.hero .buybtn{background:#fff;color:#3b3690;border-color:#fff}
+.hero .buybtn.ghost{background:#ffffff14;color:#fff;border-color:#ffffff66}
+.hero-covers{position:relative;height:230px}
+.hero-cv{position:absolute;top:10px;width:128px;padding:0;border:0;background:none;cursor:pointer;border-radius:6px;box-shadow:0 14px 30px rgba(10,8,40,.45);transition:transform .25s}
+.hero-cv .cover{border-radius:6px}
+.hc0{left:calc(50% - 170px);transform:rotate(-9deg) translateY(14px)}
+.hc1{left:calc(50% - 64px);z-index:2;transform:translateY(-4px)}
+.hc2{left:calc(50% + 42px);transform:rotate(9deg) translateY(14px)}
+.hero-cv:hover{transform:translateY(-12px) rotate(0);z-index:3}
+@media (max-width:700px){.hero{grid-template-columns:1fr;padding:20px 16px 16px}.hero-covers{height:170px;order:-1}.hero-cv{width:92px}.hc0{left:calc(50% - 125px)}.hc1{left:calc(50% - 46px)}.hc2{left:calc(50% + 33px)}}
+.couples{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px;margin-bottom:8px}
+.couple{text-align:center;border-top:4px solid var(--bc);background:linear-gradient(180deg,color-mix(in srgb,var(--bc) 14%,var(--surface)),var(--surface) 60%)}
+.couple h3{margin-top:8px}
+.couple .trope{margin-top:2px}
+.cp-pair{display:flex;justify-content:center;align-items:center;gap:6px}
+.cp-heart svg{width:26px;height:26px;display:block}
+.cp-bk{margin:8px 0 0;font-size:.88rem}
+.av{flex:none;display:inline-grid;place-items:center;width:40px;height:40px;border-radius:50%;font-family:var(--display);font-size:.95rem;font-weight:500;color:#fff;background:radial-gradient(circle at 30% 25%,color-mix(in srgb,var(--c) 55%,#fff),var(--c));box-shadow:0 0 0 2px var(--surface),0 0 0 4px color-mix(in srgb,var(--c) 45%,transparent);letter-spacing:.02em}
+.av.lg{width:62px;height:62px;font-size:1.35rem}
+.av.sm{width:32px;height:32px;font-size:.72rem;margin-right:-3px}
+.ct-name{display:flex;gap:12px;align-items:flex-start;min-width:0}
+.town-art{margin:-16px -16px 12px;border-radius:var(--r) var(--r) 0 0;overflow:hidden;line-height:0;background:var(--sunk)}
+.town-art svg{display:block;width:100%;height:96px}
+ol.tl li.tl-book{display:flex;gap:12px;align-items:flex-start;background:color-mix(in srgb,var(--bc) 10%,transparent);border-radius:var(--r);padding:10px 10px 10px 30px;margin-bottom:12px}
+ol.tl li.tl-book::before{background:var(--bc);border-color:var(--bc);top:16px}
+.tl-cv{flex:none;width:48px;padding:0;border:0;background:none;cursor:pointer}
+.rc-head{display:grid;grid-template-columns:90px 1fr;gap:16px;align-items:center;padding:0 0 14px;margin-bottom:4px;border-bottom:3px solid var(--bc)}
+.rc-head h3{font-size:1.5rem}
+.rc-cast{display:flex;margin-top:8px;padding-left:2px}
+.recap h4{color:var(--bronze)}
+.rc-chip{display:inline-flex;align-items:center;gap:8px;padding:4px 12px 4px 4px}
+.rc-chip .mini{width:22px;display:block}
+.rc-chip .mini .cover{border-radius:3px}
+.rc-chip .mini .spine span{display:none}
 mark{background:#f6c9d4;color:inherit;border-radius:2px;padding:0 1px}
 @media (max-width:700px){.brand{flex-wrap:nowrap;gap:8px}.brand h1{white-space:nowrap}.brand h1 .script{font-size:1.3em}.brand h1 .thorn{font-size:.82em}}
 @media (max-width:360px){.brand h1 .thorn{display:none}}
@@ -927,6 +971,28 @@ function buildPoster(){const cv=document.getElementById("poster-cv");if(!cv||cv.
    const a=document.createElement("a");a.href=URL.createObjectURL(bl);a.download="maple-hills-reading-order.png";document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),4000);st.textContent="Downloaded."},"image/png")}
   catch(e){st.textContent="Couldn't create the PNG here. Open the full-size poster, or long-press (right-click) the poster and save the image."}})}
 
+/* ============ VISUAL HELPERS ============ */
+const initials=c=>{const n=(c.name||"").replace(/"[^"]*"/g,"").replace(/^(Coach|Dr\.|Mr\.|Mrs\.|Professor) /,"").trim().split(/\s+/);return((n[0]||"")[0]+(n.length>1?n[n.length-1][0]:(n[0]||"")[1]||"")).toUpperCase()};
+const avatar=(id,cls="")=>{const c=C[id];if(!c)return"";return`<span class="av ${cls}" style="--c:${SERCOL[c.s]}" aria-hidden="true">${esc(initials(c))}</span>`};
+const COUPLES=[["IB","stassie","nate","Rivals on the ice"],["WF","aurora","russ","One night, one summer"],["DD","halle","henry","Lessons in love"]];
+const HEART='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.7 4.5c2.1 0 3.5 1.1 5.3 3 1.8-1.9 3.2-3 5.3-3 3.7 0 5.8 3.9 4.3 7.3C19.5 16.4 12 21 12 21z" fill="currentColor"/></svg>';
+const TOWNART={
+ "town-ucmh":'<svg viewBox="-70 0 260 70" preserveAspectRatio="xMidYMid meet" aria-hidden="true"><ellipse cx="60" cy="52" rx="56" ry="14" fill="#cfe0f5"/><ellipse cx="60" cy="52" rx="40" ry="9" fill="none" stroke="#fff" stroke-width="2"/><path d="M60 39v26" stroke="#d9677f" stroke-width="2"/><path d="M22 34 l8-18 h4 l-2 14 h10 l-2 4 z" fill="#5a5fc4"/><path d="M78 30 c6-2 14-2 18 2 l-2 3 h-18z" fill="#e07b24"/><path d="M80 35 h18" stroke="#3a3a6a" stroke-width="2"/><path d="M76 36 v6 M96 36 v6" stroke="#9aa4c8" stroke-width="2"/><circle cx="16" cy="12" r="1.6" fill="#fff"/><circle cx="104" cy="10" r="1.6" fill="#fff"/><circle cx="58" cy="8" r="1.3" fill="#fff"/></svg>',
+ "town-camp":'<svg viewBox="-70 0 260 70" preserveAspectRatio="xMidYMid meet" aria-hidden="true"><rect x="-70" width="260" height="70" fill="#fde3dc"/><circle cx="96" cy="16" r="9" fill="#ffd27a"/><path d="M0 58 L18 30 L32 50 L48 22 L66 54 Z" fill="#e8786f" opacity=".85"/><path d="M60 62 L76 34 L92 62 Z" fill="#7b74d1"/><path d="M76 34 L76 62" stroke="#fde3dc" stroke-width="2"/><path d="M100 60 l6-10 6 10z" fill="#e07b24"/><path d="M97 62 h18" stroke="#8a5a3a" stroke-width="3"/><rect x="-70" y="62" width="260" height="8" fill="#b8d8a8"/></svg>',
+ "town-home":'<svg viewBox="-70 0 260 70" preserveAspectRatio="xMidYMid meet" aria-hidden="true"><rect x="-70" width="260" height="70" fill="#ebe4f7"/><path d="M-60 60 h240" stroke="#c8bde6" stroke-width="2" stroke-dasharray="4 4"/><path d="M14 44 l12-12 12 12 v16 h-24z" fill="#9a7ac4"/><rect x="22" y="50" width="8" height="10" fill="#ebe4f7"/><path d="M50 60 l14-30 14 30z" fill="#6f9fd8"/><path d="M58 42 l6-12 6 12" fill="#fff"/><circle cx="96" cy="34" r="12" fill="#e8786f"/><circle cx="96" cy="34" r="4" fill="#fff"/><path d="M96 46 l-6 14 h12z" fill="#e8786f"/></svg>'};
+function heroHTML(){
+ const cov=BOOKLIST.map((b,i)=>`<button class="hero-cv hc${i}" data-go="book:${b.c}" aria-label="${esc(b.title)}">${coverHtml(b.c,b.title,b.col)}</button>`).join("");
+ return`<section class="hero"><div class="hero-txt"><p class="eyebrow">Hannah Grace · a fan companion</p><h2 class="hero-h">Welcome to <span>Maple Hills</span></h2>
+ <p>One college, one hockey house and a friend group you'll want to move in with. Books, cast, places, recaps and who's tied to whom, all spoiler-safe.</p>
+ <div class="stats"><span><b>${BOOKLIST.length}</b> books</span><span><b>${CHARS.length}</b> characters</span><span><b>${COUPLES.length}</b> couples</span><span><b>${EDGES.length}</b> connections</span></div>
+ <div class="hero-act"><button class="buybtn" data-go="book:IB">Start with Icebreaker</button><button class="buybtn ghost" data-tab-go="characters">Meet the cast</button><button class="buybtn ghost" data-tab-go="recaps">Catch me up</button></div></div>
+ <div class="hero-covers">${cov}</div></section>`}
+function couplesHTML(){
+ return`<div class="group-h"><h3>The couples</h3><span>one per book</span></div><div class="couples">${COUPLES.map(([bk,a,b,tag])=>{const B=BOOKLIST[bi(bk)],hid=hideItem(bi(bk));
+  const inner=`<div class="cp-pair">${avatar(a,"lg")}<span class="cp-heart" style="color:${B.col}">${HEART}</span>${avatar(b,"lg")}</div><h3>${esc(short(a))} &amp; ${esc(short(b))}</h3><p class="trope">${esc(tag)}</p><p class="cp-bk"><button class="lnk" data-go="book:${bk}">${esc(B.title)}</button> · <button class="lnk" data-go="map:${a}">Their connections</button></p>`;
+  return`<article class="card couple" style="--bc:${B.col}">${sp(hid,"cp-"+bk,inner,"div")}</article>`}).join("")}</div>`}
+document.addEventListener("click",e=>{const t=e.target.closest("[data-tab-go]");if(t)show(t.dataset.tabGo)});
+
 /* ============ BOOK GUIDE ============ */
 let bookSer="all";
 function renderBooks(){
@@ -934,10 +1000,11 @@ function renderBooks(){
  const order=BOOKLIST.map((b,i)=>`<li><span class="n">${i+1}</span><span class="d" style="background:${b.col}"></span><span class="ti"><button class="lnk" data-go="book:${b.c}">${esc(b.title)}</button></span><span class="y">${b.year}</span></li>`);
  order.push(`<li class="soon"><span class="n">4</span><span class="d" style="background:#9a98b8"></span><span class="ti"><button class="lnk" data-go="book:next">${esc(UPCOMING.title)}</button> (coming)</span><span class="y">2027</span></li>`);
  const orderOpen=store.get("mapleOrderOpen",false);
- v.innerHTML=`<p class="eyebrow">Start here</p><h2>Book Guide</h2>
+ v.innerHTML=`${heroHTML()}<p class="eyebrow">Start here</p><h2>Book Guide</h2>
  <p class="lede">Hannah Grace's Maple Hills books follow a friend group at the University of California, Maple Hills. Each book gives a new couple their story, but the cast carries over and the timeline runs straight on, so read them in order. Premises only here; full plots live in Recaps.</p>
  <p class="note">Hannah Grace's other books, Holiday Ever After (2025) and Champagne Problems (February 2027, a Formula 1 romance), aren't part of Maple Hills.</p>
  <details class="orderbox" id="orderbox"${orderOpen?" open":""}><summary><span class="t">Reading order</span><span class="c"><span class="long">Maple Hills · </span>${BOOKLIST.length} books + 1 coming</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary><ol class="order">${order.join("")}</ol>${posterHTML()}</details>
+ ${couplesHTML()}
  <div class="group-h"><h3>${sw("mh")}Maple Hills</h3><span>${esc(SERIES.mh.town)}</span></div>
  <div class="grid wide">${BOOKLIST.map(b=>{const key="bk-"+b.c,i=bi(b.c);
   const body=`<p class="eyebrow">Read ${ord(i+1)} · Maple Hills ${b.n} · ${b.year}</p><h3>${esc(b.title)}</h3><p class="trope">${esc(b.trope)}</p><p class="bk-plot">${esc(b.plot)}</p><span class="lbl" style="margin-top:10px">Main characters</span><div class="castlist">${b.cast.map(charLink).join("")}</div>`;
@@ -962,7 +1029,7 @@ function charCard(c){
  const f=firstBook(c.books),key="c-"+c.id;
  const rv=Math.max(f,c.rev?bi(c.rev):f);
  const featR=risk(c.feat,-1),jobR=risk(c.job,c.jobB?bi(c.jobB):-1),loveR=risk(c.love,c.loveB?bi(c.loveB):f),twR=risk(c.twist,c.twB?bi(c.twB):f),stR=risk(c.story,rv),ageR=risk(c.age,-1),akaR=risk(c.aka,-1),abR=risk(c.conn,c.loveB?Math.max(f,bi(c.loveB)):f);
- const inner=`<div class="card-top"><div><h3>${esc(dispName(c))}</h3><div class="aka">${sp(hideField(akaR),key+"-ak",esc(c.aka))}</div></div><div class="pills">${sp(hideField(rv),key+"-al",alignPill(c.role))}${statusPill(c.status)}</div></div>
+ const inner=`<div class="card-top"><div class="ct-name">${avatar(c.id)}<div><h3>${esc(dispName(c))}</h3><div class="aka">${sp(hideField(akaR),key+"-ak",esc(c.aka))}</div></div></div><div class="pills">${sp(hideField(rv),key+"-al",alignPill(c.role))}${statusPill(c.status)}</div></div>
  <dl class="kv">${PRON[c.id]?`<dt>Say it</dt><dd style="font-family:var(--mono);font-size:.85rem">${esc(PRON[c.id])}</dd>`:""}
  <dt>Series</dt><dd>${sw("mh")}Maple Hills <span class="circle-k">· ${sw(c.s)}<button class="lnk" data-go="world:${CIRC2TOWN[c.s]}">${esc(serName(c.s))}</button></span></dd>
  <dt>From</dt><dd>${esc(c.from||"Not stated in the books")}</dd>
@@ -1010,9 +1077,9 @@ function renderWorld(){
   if(!ps.length)return"";
   const lm=ps.map(([[n,d,b,flag],i])=>{const r=bi(b),hid=hideItem(r)||(flag&&hideField(r));return`<li><b>${esc(n)}</b> <span class="circle-k">${esc(BOOKS[b])}</span>${sp(hid,t.id+"-p"+i,` <span style="color:var(--muted)">${esc(d)}</span>`)}</li>`}).join("");
   const bks=[...new Set(t.places.map(p=>p[2]))].sort((a,b)=>bi(a)-bi(b)).map(b=>`<button class="lnk" data-go="book:${b}">${esc(BOOKS[b])}</button>`).join(" · ");
-  return `<article class="card town" id="${t.id}" style="border-top:4px solid ${SERCOL[t.s]}"><p class="eyebrow">${esc(SERIES[t.s].name)}</p><h3>${esc(t.name)}</h3><div class="aka">${esc(t.hub)}</div>
+  return `<article class="card town" id="${t.id}" style="border-top:4px solid ${SERCOL[t.s]}"><div class="town-art">${TOWNART[t.id]||""}</div><p class="eyebrow">${esc(SERIES[t.s].name)}</p><h3>${esc(t.name)}</h3><div class="aka">${esc(t.hub)}</div>
   <p style="margin:8px 0 0;font-size:.95rem">${esc(t.d)}</p><span class="lbl" style="margin-top:12px">Places to know</span><ul class="lm">${lm}</ul><div class="books">Books: ${bks}</div></article>`}).join("");
- const tl=TIMELINE.map((x,i)=>[x,i]).filter(([x])=>inBk(x[3])||(worldBk!=="all"&&x[4]&&x[1].startsWith("Maple Hills Book"))).map(([[w,t,d,b,isB],i])=>{const r=bi(b),hid=isB?hideItem(r):hideField(r)||hideField(later(d));return`<li id="tl-${i}" class="${isB?"bk":""}"><div class="when">${esc(w)}</div>${sp(hid,"tl-"+i,`<b>${esc(t)}</b><p>${esc(d)}</p>`,"div")}</li>`}).join("");
+ const tl=TIMELINE.map((x,i)=>[x,i]).filter(([x])=>inBk(x[3])||(worldBk!=="all"&&x[4]&&x[1].startsWith("Maple Hills Book"))).map(([[w,t,d,b,isB],i])=>{const r=bi(b),hid=isB?hideItem(r):hideField(r)||hideField(later(d));const B=isB?BOOKLIST.find(x=>x.title===t):null;return`<li id="tl-${i}" class="${isB?"bk":""}${B?" tl-book":""}"${B?` style="--bc:${B.col}"`:""}>${B?`<button class="tl-cv" data-go="book:${B.c}" aria-label="${esc(B.title)}">${coverHtml(B.c,B.title,B.col)}</button>`:""}<div><div class="when">${esc(w)}</div>${sp(hid,"tl-"+i,`<b>${esc(t)}</b><p>${esc(d)}</p>`,"div")}</div></li>`}).join("");
  const pins=PLACES.map((p,i)=>`<g class="pin" data-pl="${p.id}" tabindex="0" role="button" aria-label="${esc(p.name)}"><circle cx="${p.x}" cy="${p.y}" r="8"/><text x="${p.x}" y="${p.y+3.5}" text-anchor="middle" style="font-family:var(--mono);font-size:9px;fill:#fff">${i+1}</text><text x="${p.x+12}" y="${p.y-9}" style="font-size:12px">${esc(p.name)}</text></g>`).join("");
  const chips=[["all","All books"],...BOOKLIST.map(b=>[b.c,b.title])].map(([k,l])=>`<button class="chip" data-wb="${k}" aria-pressed="${worldBk===k}">${k!=="all"?`<span class="swatch" style="background:${BOOKLIST[bi(k)].col}"></span>`:""}${esc(l)}</button>`).join("");
  v.innerHTML=`<p class="eyebrow">Where and when</p><h2>Timeline &amp; Towns</h2>
@@ -1055,13 +1122,13 @@ if(!RECAPS[recapBook])recapBook="IB";
 function renderRecaps(){
  const v=$("#view");store.set("mapleRecap",recapBook);
  const b=BOOKLIST.find(x=>x.c===recapBook)||BOOKLIST[0],r=RECAPS[b.c],idx=bi(b.c),key="rc-"+b.c;
- const body=`<p class="eyebrow">Maple Hills ${b.n} · ${b.year}</p><h3>${esc(b.title)}</h3>
+ const body=`<div class="rc-head" style="--bc:${b.col}">${coverHtml(b.c,b.title,b.col)}<div><p class="eyebrow">Maple Hills ${b.n} · ${b.year}</p><h3>${esc(b.title)}</h3><p class="trope">${esc(b.trope)}</p><div class="rc-cast">${b.cast.slice(0,6).map(id=>avatar(id,"sm")).join("")}</div></div></div>
   <h4>Where it starts</h4><p>${esc(r.start)}</p>
   <h4>What happens</h4><ul>${r.events.map(e=>`<li>${esc(e)}</li>`).join("")}</ul>
   <h4>How it ends</h4><p>${esc(r.end)}</p>
   <div class="remember"><h4>Remember this going into the next book</h4><ul>${r.remember.map(e=>`<li>${esc(e)}</li>`).join("")}</ul></div>`;
  const hid=hideField(idx);
- const chips=`<div class="rc-row"><span class="rc-s">${sw("mh")}Maple Hills</span>${BOOKLIST.map(x=>`<button class="chip" data-rb="${x.c}" aria-pressed="${x.c===b.c}"><span class="swatch" style="background:${x.col}"></span>${esc(x.title)}</button>`).join("")}</div>`;
+ const chips=`<div class="rc-row"><span class="rc-s">${sw("mh")}Maple Hills</span>${BOOKLIST.map(x=>`<button class="chip rc-chip" data-rb="${x.c}" aria-pressed="${x.c===b.c}"><span class="mini">${coverHtml(x.c,x.title,x.col)}</span>${esc(x.title)}</button>`).join("")}</div>`;
  v.innerHTML=`<p class="eyebrow">Previously, at Maple Hills…</p><h2>Book Recaps</h2>
  <p class="lede">Full-spoiler summaries for when the next book is a year away and you've forgotten everything. Pick the book you just finished, or search every recap for a name or moment.</p>
  <div class="rc-search"><input type="search" id="rq" placeholder="Search the recaps: a name, a place, a moment…" aria-label="Search the recaps"></div>
